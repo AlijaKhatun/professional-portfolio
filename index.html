@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- font awsome link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css"
+    integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+  <title>Alija — Frontend Developer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  
+<!-- ===== Custom cursor glow (decorative, desktop only) ===== -->
+<div class="cursor-glow" id="cursorGlow"></div>
+  <!-- ===== Top progress bar ===== -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- ===== Navigation ===== -->
+  <header class="nav-wrap" id="navWrap">
+    <nav class="nav container">
+      <a href="#home" class="logo"><img src="./img/logo2.png" alt="logo"></a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active" data-section="home">Home</a></li>
+        <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+        <li><a href="#skills" class="nav-link" data-section="skills">Skills</a></li>
+        <li><a href="#projects" class="nav-link" data-section="projects">Projects</a></li>
+        <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+      </ul>
+
+      <a href="#contact" class="nav-cta">Hire me</a>
+
+      <button class="burger" id="burger" aria-label="Toggle menu" aria-expanded="false">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </nav>
+  </header>
+
+  <!-- ===== Mobile menu overlay ===== -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#home" class="mobile-link">Home</a></li>
+      <li><a href="#about" class="mobile-link">About</a></li>
+      <li><a href="#skills" class="mobile-link">Skills</a></li>
+      <li><a href="#projects" class="mobile-link">Projects</a></li>
+      <li><a href="#contact" class="mobile-link">Contact</a></li>
+    </ul>
+  </div>
+
+  <main>
+
+    <!-- ===== HOME / HERO ===== -->
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+
+        <div class="hero-text">
+          <p class="eyebrow-line">Frontend Developer</p>
+          <h1>
+            Hi, I'm <span class="highlight">Alija</span></h1>
+          <h1>I build clean,</h1>
+          <h1 class="type-target" id="typeTarget"></h1>
+
+          <p class="hero-sub">
+            Frontend developer on the path to becoming a full MERN stack
+            developer — currently sharpening React, hooks and modern JavaScript
+            while looking for an internship or junior developer role.
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">View my work</a>
+            <a href="../pdf-file/alija-resume.pdf" target="_blank" class="btn btn-ghost">View Resume</a>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat">
+              <span class="stat-num" data-count="7">0</span>
+              <span class="stat-label">Core tools learned</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num" data-count="3">0</span>
+              <span class="stat-label">Practice projects</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num" data-count="1">0</span>
+              <span class="stat-label">MERN course in progress</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="banner-frame">
+            <div class="banner-glow"></div>
+            <!-- banner image -->
+            <img src="./img/alija4.png" alt="Alija — Frontend Developer" class="banner-photo" id="bannerPhoto">
+            <div class="banner-fallback" id="bannerFallback">
+              <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="100" cy="78" r="34" fill="#DCE8FF" />
+                <path d="M40 176c6-42 40-64 60-64s54 22 60 64" fill="#DCE8FF" />
+              </svg>
+
+            </div>
+            <div class="code-chip chip-1">&lt;/&gt;</div>
+            <div class="code-chip chip-2">JavaScript</div>
+            <div class="code-chip chip-3">MERN</div>
+          </div>
+        </div>
+
+      </div>
+      <a href="#about" class="scroll-cue" aria-label="Scroll down">
+        <span></span>
+      </a>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section id="about" class="about">
+      <div class="container">
+        <p class="section-label" data-reveal>About</p>
+        <h2 class="section-title" data-reveal>A fresher developer, building on purpose</h2>
+
+        <div class="about-grid">
+          <div class="about-copy" data-reveal>
+            <p>
+              I completed my HSC in Bangladesh, then stepped away from formal
+              education for a while. That pause turned into a restart — I
+              enrolled in a MERN Stack development course at
+              <strong>Creative IT Institute</strong>, and started building
+              real skills from the ground up.
+            </p>
+            <p>
+              Since then I've learned HTML, CSS, Tailwind CSS, Bootstrap,
+              JavaScript, Git &amp; GitHub, and React — including hooks, which
+              I've picked up most recently. I'm now focused on becoming a
+              confident MERN stack developer and I'm actively looking for an
+              <strong>internship or junior developer</strong> role where I can
+              keep learning while contributing real work.
+            </p>
+          </div>
+
+          <div class="timeline" data-reveal>
+            <div class="timeline-item">
+              <span class="timeline-dot"></span>
+              <div>
+                <h3>HSC Completed</h3>
+                <p>Finished higher secondary education in Bangladesh.</p>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <span class="timeline-dot"></span>
+              <div>
+                <h3>Started MERN Stack course</h3>
+                <p>Enrolled at Creative IT Institute, to learn web development.</p>
+              </div>
+            </div>
+            <div class="timeline-item timeline-current">
+              <span class="timeline-dot"></span>
+              <div>
+                <h3>Now: Job hunting</h3>
+                <p>Learning React in depth and applying for internship / junior roles.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SKILLS ===== -->
+    <section id="skills" class="skills">
+      <div class="container">
+        <p class="section-label" data-reveal>Skills</p>
+        <h2 class="section-title" data-reveal>Tools I build with</h2>
+
+        <div class="skills-grid">
+
+          <div class="skill-group" data-reveal>
+            <h3>Markup &amp; Styling</h3>
+            <ul class="skill-list">
+              <li><span>HTML5</span>
+                <div class="bar"><i style="--w:90%"></i></div>
+              </li>
+              <li><span>CSS3</span>
+                <div class="bar"><i style="--w:85%"></i></div>
+              </li>
+              <li><span>Tailwind CSS</span>
+                <div class="bar"><i style="--w:80%"></i></div>
+              </li>
+              <li><span>Bootstrap</span>
+                <div class="bar"><i style="--w:78%"></i></div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="skill-group" data-reveal>
+            <h3>JavaScript &amp; React</h3>
+            <ul class="skill-list">
+              <li><span>JavaScript (ES6+)</span>
+                <div class="bar"><i style="--w:78%"></i></div>
+              </li>
+              <li><span>React</span>
+                <div class="bar"><i style="--w:70%"></i></div>
+              </li>
+              <li><span>React Hooks</span>
+                <div class="bar"><i style="--w:60%"></i></div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="skill-group" data-reveal>
+            <h3>Tools &amp; Workflow</h3>
+            <ul class="skill-list">
+              <li><span>Git &amp; GitHub</span>
+                <div class="bar"><i style="--w:75%"></i></div>
+              </li>
+              <li><span>Responsive Design</span>
+                <div class="bar"><i style="--w:82%"></i></div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="skill-group skill-group-next" data-reveal>
+            <h3>Currently learning</h3>
+            <div class="pill-row">
+              <span class="pill">Node.js</span>
+              <span class="pill">Express.js</span>
+              <span class="pill">MongoDB</span>
+              <span class="pill">REST APIs</span>
+            </div>
+            <p class="skill-note">Building toward a complete MERN stack skill set, one project at a time.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROJECTS ===== -->
+    <section id="projects" class="projects">
+      <div class="container">
+        <p class="section-label" data-reveal>Projects</p>
+        <h2 class="section-title" data-reveal>Things I've practiced building</h2>
+        <p class="section-note" data-reveal>
+          Sample project slots below —
+        </p>
+
+        <div class="project-grid">
+
+          <article class="project-card" data-reveal>
+            <div class="project-thumb thumb-1">
+              <img src="./img/mosh.png" alt="mosh">
+            </div>
+            <div class="project-body">
+              <h3>Task Manager App</h3>
+              <p>A responsive to-do / task tracker with add, edit, delete and local storage persistence.</p>
+              <div class="tag-row">
+                <span class="tag">React</span>
+                <span class="tag">Hooks</span>
+                <span class="tag">CSS</span>
+              </div>
+              <div class="project-links">
+                <a href="https://alijakhatun.github.io/developer-portfolio/" target="_blank" rel="noopener noreferrer" class="project-link">Live
+                  demo → </a>
+                <a href="https://github.com/AlijaKhatun/developer-portfolio" target="_blank"  class="project-link" rel="noopener noreferrer">Code →</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card" data-reveal>
+            <div class="project-thumb thumb-2">
+              <img src="./img/restaurant.png" alt="restaurant">
+            </div>
+            <div class="project-body">
+              <h3>Landing Page Clone</h3>
+              <p>A pixel-focused, fully responsive landing page built with Tailwind CSS and vanilla JS interactions.</p>
+              <div class="tag-row">
+                <span class="tag">HTML</span>
+                <span class="tag">Tailwind</span>
+                <span class="tag">JS</span>
+              </div>
+              <div class="project-links">
+                <a href="https://shushi-restaurant.vercel.app/
+" class="project-link" target="_blank" rel="noopener noreferrer">Live demo →</a>
+                <a href="https://github.com/AlijaKhatun/shushi-restaurant" target="_blank" class="project-link">Code →</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card" data-reveal>
+            <div class="project-thumb thumb-3">
+              <img src="./img/tech-company.png" alt="tech-company">
+            </div>
+            <div class="project-body">
+              <h3>Weather Dashboard</h3>
+              <p>Fetches live weather data from a public API and displays it with a clean, responsive UI.</p>
+              <div class="tag-row">
+                <span class="tag">JavaScript</span>
+                <span class="tag">API</span>
+                <span class="tag">Bootstrap</span>
+              </div>
+              <div class="project-links">
+                <a href="https://sass-pro-brown.vercel.app/
+" class="project-link" target="_blank">Live demo →</a>
+                <a href="https://github.com/AlijaKhatun/sass-pro" class="project-link" target="_blank">Code →</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section id="contact" class="contact">
+      <div class="container contact-grid">
+
+        <div class="contact-info" data-reveal>
+          <p class="contact-hint">Contact</p>
+          <h2 class="section-title">Let's work together</h2>
+          <p class="contact-copy">
+            I'm currently open to internship and junior developer
+            opportunities. Feel free to reach out — I usually reply within a
+            day or two.
+          </p>
+
+          <ul class="contact-list">
+            <li>
+              <span class="contact-ic">✉</span>
+              <a href="mailto:aligabinsamad@gmail.com">alijabinsamad@gmail.com</a>
+            </li>
+            <li>
+              <span class="contact-ic">☎</span>
+              <a href="tel:+8801351273721">+8801351273721</a>
+            </li>
+            <li>
+              <span class="contact-ic">◆</span>
+              <a href="https://github.com/AlijaKhatun" target="_blank" rel="noopener">github.com/AlikaKhatun</a>
+            </li>
+            <li>
+              <span class="contact-ic">in</span>
+              <a href="https://www.linkedin.com/in/alijakhatun/" target="_blank" rel="noopener">linkedin.com/in/alija khatun</a>
+            </li>
+          </ul>
+          
+        </div>
+
+        <form class="contact-form" id="contactForm" data-reveal>
+          <div class="form-row">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required>
+          </div>
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required>
+          </div>
+          <div class="form-row">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me about the role or project..."
+              required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">
+            <span class="btn-label">Send message</span>
+          </button>
+          <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <p>© <span id="year"></span> Alija. Built with HTML, CSS &amp; JavaScript.</p>
+      <a href="#home" class="back-top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
